@@ -485,8 +485,8 @@ int neighbourIndices[27][3] = {
 
 - (NSArray *)extractColorsFromImage:(UIImage *)image flags:(NSUInteger)flags count:(NSUInteger)count
 {
-    // Get maxima (bright only)
-    NSArray *sortedMaxima = [self findAndSortMaximaInImage:image flags:flags];
+    // Get maxima
+    NSArray *sortedMaxima = [self extractAndFilterMaximaFromImage:image flags:flags];
     
     // Do clever distinct color filtering
     sortedMaxima = [self performAdaptiveDistinctFilteringForMaxima:sortedMaxima count:count];
