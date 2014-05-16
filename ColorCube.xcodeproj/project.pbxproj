@@ -7,25 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7F186AA71925134C00E4F320 /* test1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7F186AA61925134C00E4F320 /* test1.jpg */; };
-		7F332286192563D500DB9917 /* CCLocalMaximum.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F332285192563D500DB9917 /* CCLocalMaximum.m */; };
-		7F33228A1925677700DB9917 /* test4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7F3322871925677700DB9917 /* test4.jpg */; };
-		7F33228B1925677700DB9917 /* test3.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F3322881925677700DB9917 /* test3.png */; };
-		7F33228C1925677700DB9917 /* test2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7F3322891925677700DB9917 /* test2.jpg */; };
+		7F1057451925EA59005A98D4 /* CCLocalMaximum.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F1057411925EA59005A98D4 /* CCLocalMaximum.m */; };
+		7F1057461925EA59005A98D4 /* CCColorCube.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7F1057431925EA59005A98D4 /* CCColorCube.mm */; };
+		7F46E8D61925EA8D003C595F /* CCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F46E8CE1925EA8D003C595F /* CCViewController.m */; };
+		7F46E8D71925EA8D003C595F /* CCTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F46E8D01925EA8D003C595F /* CCTableViewCell.m */; };
+		7F46E8D81925EA8D003C595F /* CCImageColors.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F46E8D21925EA8D003C595F /* CCImageColors.m */; };
+		7F46E8D91925EA8D003C595F /* CCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F46E8D41925EA8D003C595F /* CCAppDelegate.m */; };
+		7F46E8E41925F21C003C595F /* streetart.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7F46E8DA1925F21C003C595F /* streetart.jpg */; };
+		7F46E8E51925F21C003C595F /* xberg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7F46E8DB1925F21C003C595F /* xberg.jpg */; };
+		7F46E8E61925F21C003C595F /* strand.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7F46E8DC1925F21C003C595F /* strand.jpg */; };
+		7F46E8E71925F21C003C595F /* schnee.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7F46E8DD1925F21C003C595F /* schnee.jpg */; };
+		7F46E8E81925F21C003C595F /* museum.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7F46E8DE1925F21C003C595F /* museum.jpg */; };
+		7F46E8E91925F21C003C595F /* melone.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7F46E8DF1925F21C003C595F /* melone.jpg */; };
+		7F46E8EA1925F21C003C595F /* markt.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7F46E8E01925F21C003C595F /* markt.jpg */; };
+		7F46E8EB1925F21C003C595F /* glotze.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7F46E8E11925F21C003C595F /* glotze.jpg */; };
+		7F46E8EC1925F21C003C595F /* club.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7F46E8E21925F21C003C595F /* club.jpg */; };
+		7F46E8ED1925F21C003C595F /* berlin.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7F46E8E31925F21C003C595F /* berlin.jpg */; };
 		7F98C63B192504D3009C124F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F98C63A192504D3009C124F /* Foundation.framework */; };
 		7F98C63D192504D3009C124F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F98C63C192504D3009C124F /* CoreGraphics.framework */; };
 		7F98C63F192504D3009C124F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F98C63E192504D3009C124F /* UIKit.framework */; };
 		7F98C645192504D3009C124F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7F98C643192504D3009C124F /* InfoPlist.strings */; };
 		7F98C647192504D3009C124F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F98C646192504D3009C124F /* main.m */; };
-		7F98C64B192504D3009C124F /* CCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F98C64A192504D3009C124F /* CCAppDelegate.m */; };
-		7F98C651192504D3009C124F /* CCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F98C650192504D3009C124F /* CCViewController.m */; };
 		7F98C653192504D3009C124F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F98C652192504D3009C124F /* Images.xcassets */; };
 		7F98C65A192504D3009C124F /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F98C659192504D3009C124F /* XCTest.framework */; };
 		7F98C65B192504D3009C124F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F98C63A192504D3009C124F /* Foundation.framework */; };
 		7F98C65C192504D3009C124F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F98C63E192504D3009C124F /* UIKit.framework */; };
 		7F98C664192504D3009C124F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7F98C662192504D3009C124F /* InfoPlist.strings */; };
 		7F98C666192504D3009C124F /* ColorCubeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F98C665192504D3009C124F /* ColorCubeTests.m */; };
-		7F98C67219250511009C124F /* CCColorCube.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7F98C67119250511009C124F /* CCColorCube.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,12 +47,28 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		7F186AA61925134C00E4F320 /* test1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = test1.jpg; sourceTree = "<group>"; };
-		7F332284192563D500DB9917 /* CCLocalMaximum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCLocalMaximum.h; sourceTree = "<group>"; };
-		7F332285192563D500DB9917 /* CCLocalMaximum.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCLocalMaximum.m; sourceTree = "<group>"; };
-		7F3322871925677700DB9917 /* test4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = test4.jpg; sourceTree = "<group>"; };
-		7F3322881925677700DB9917 /* test3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test3.png; sourceTree = "<group>"; };
-		7F3322891925677700DB9917 /* test2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = test2.jpg; sourceTree = "<group>"; };
+		7F1057411925EA59005A98D4 /* CCLocalMaximum.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CCLocalMaximum.m; path = ColorCube/CCLocalMaximum.m; sourceTree = "<group>"; };
+		7F1057421925EA59005A98D4 /* CCLocalMaximum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CCLocalMaximum.h; path = ColorCube/CCLocalMaximum.h; sourceTree = "<group>"; };
+		7F1057431925EA59005A98D4 /* CCColorCube.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = CCColorCube.mm; path = ColorCube/CCColorCube.mm; sourceTree = "<group>"; };
+		7F1057441925EA59005A98D4 /* CCColorCube.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CCColorCube.h; path = ColorCube/CCColorCube.h; sourceTree = "<group>"; };
+		7F46E8CE1925EA8D003C595F /* CCViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CCViewController.m; path = Demo/CCViewController.m; sourceTree = "<group>"; };
+		7F46E8CF1925EA8D003C595F /* CCViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CCViewController.h; path = Demo/CCViewController.h; sourceTree = "<group>"; };
+		7F46E8D01925EA8D003C595F /* CCTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CCTableViewCell.m; path = Demo/CCTableViewCell.m; sourceTree = "<group>"; };
+		7F46E8D11925EA8D003C595F /* CCTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CCTableViewCell.h; path = Demo/CCTableViewCell.h; sourceTree = "<group>"; };
+		7F46E8D21925EA8D003C595F /* CCImageColors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CCImageColors.m; path = Demo/CCImageColors.m; sourceTree = "<group>"; };
+		7F46E8D31925EA8D003C595F /* CCImageColors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CCImageColors.h; path = Demo/CCImageColors.h; sourceTree = "<group>"; };
+		7F46E8D41925EA8D003C595F /* CCAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CCAppDelegate.m; path = Demo/CCAppDelegate.m; sourceTree = "<group>"; };
+		7F46E8D51925EA8D003C595F /* CCAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CCAppDelegate.h; path = Demo/CCAppDelegate.h; sourceTree = "<group>"; };
+		7F46E8DA1925F21C003C595F /* streetart.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = streetart.jpg; sourceTree = "<group>"; };
+		7F46E8DB1925F21C003C595F /* xberg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = xberg.jpg; sourceTree = "<group>"; };
+		7F46E8DC1925F21C003C595F /* strand.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = strand.jpg; sourceTree = "<group>"; };
+		7F46E8DD1925F21C003C595F /* schnee.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = schnee.jpg; sourceTree = "<group>"; };
+		7F46E8DE1925F21C003C595F /* museum.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = museum.jpg; sourceTree = "<group>"; };
+		7F46E8DF1925F21C003C595F /* melone.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = melone.jpg; sourceTree = "<group>"; };
+		7F46E8E01925F21C003C595F /* markt.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = markt.jpg; sourceTree = "<group>"; };
+		7F46E8E11925F21C003C595F /* glotze.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = glotze.jpg; sourceTree = "<group>"; };
+		7F46E8E21925F21C003C595F /* club.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = club.jpg; sourceTree = "<group>"; };
+		7F46E8E31925F21C003C595F /* berlin.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = berlin.jpg; sourceTree = "<group>"; };
 		7F98C637192504D3009C124F /* ColorCube.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ColorCube.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F98C63A192504D3009C124F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		7F98C63C192504D3009C124F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -53,18 +77,12 @@
 		7F98C644192504D3009C124F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		7F98C646192504D3009C124F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7F98C648192504D3009C124F /* ColorCube-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ColorCube-Prefix.pch"; sourceTree = "<group>"; };
-		7F98C649192504D3009C124F /* CCAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CCAppDelegate.h; sourceTree = "<group>"; };
-		7F98C64A192504D3009C124F /* CCAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CCAppDelegate.m; sourceTree = "<group>"; };
-		7F98C64F192504D3009C124F /* CCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CCViewController.h; sourceTree = "<group>"; };
-		7F98C650192504D3009C124F /* CCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CCViewController.m; sourceTree = "<group>"; };
 		7F98C652192504D3009C124F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		7F98C658192504D3009C124F /* ColorCubeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ColorCubeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F98C659192504D3009C124F /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		7F98C661192504D3009C124F /* ColorCubeTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ColorCubeTests-Info.plist"; sourceTree = "<group>"; };
 		7F98C663192504D3009C124F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		7F98C665192504D3009C124F /* ColorCubeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ColorCubeTests.m; sourceTree = "<group>"; };
-		7F98C67019250511009C124F /* CCColorCube.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCColorCube.h; sourceTree = "<group>"; };
-		7F98C67119250511009C124F /* CCColorCube.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CCColorCube.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,12 +112,31 @@
 		7F186AA51925134100E4F320 /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				7F3322871925677700DB9917 /* test4.jpg */,
-				7F3322881925677700DB9917 /* test3.png */,
-				7F3322891925677700DB9917 /* test2.jpg */,
-				7F186AA61925134C00E4F320 /* test1.jpg */,
+				7F46E8DA1925F21C003C595F /* streetart.jpg */,
+				7F46E8DB1925F21C003C595F /* xberg.jpg */,
+				7F46E8DC1925F21C003C595F /* strand.jpg */,
+				7F46E8DD1925F21C003C595F /* schnee.jpg */,
+				7F46E8DE1925F21C003C595F /* museum.jpg */,
+				7F46E8DF1925F21C003C595F /* melone.jpg */,
+				7F46E8E01925F21C003C595F /* markt.jpg */,
+				7F46E8E11925F21C003C595F /* glotze.jpg */,
+				7F46E8E21925F21C003C595F /* club.jpg */,
+				7F46E8E31925F21C003C595F /* berlin.jpg */,
 			);
 			name = Images;
+			sourceTree = "<group>";
+		};
+		7F6408F31925E94000BA4A75 /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				7F46E8D31925EA8D003C595F /* CCImageColors.h */,
+				7F46E8D21925EA8D003C595F /* CCImageColors.m */,
+				7F46E8D11925EA8D003C595F /* CCTableViewCell.h */,
+				7F46E8D01925EA8D003C595F /* CCTableViewCell.m */,
+				7F46E8CF1925EA8D003C595F /* CCViewController.h */,
+				7F46E8CE1925EA8D003C595F /* CCViewController.m */,
+			);
+			name = Demo;
 			sourceTree = "<group>";
 		};
 		7F98C62E192504D3009C124F = {
@@ -135,12 +172,10 @@
 		7F98C640192504D3009C124F /* ColorCube */ = {
 			isa = PBXGroup;
 			children = (
+				7F46E8D51925EA8D003C595F /* CCAppDelegate.h */,
+				7F46E8D41925EA8D003C595F /* CCAppDelegate.m */,
+				7F6408F31925E94000BA4A75 /* Demo */,
 				7F98C66F192504E6009C124F /* ColorCube */,
-				7F98C649192504D3009C124F /* CCAppDelegate.h */,
-				7F98C64A192504D3009C124F /* CCAppDelegate.m */,
-				7F98C64F192504D3009C124F /* CCViewController.h */,
-				7F98C650192504D3009C124F /* CCViewController.m */,
-				7F98C652192504D3009C124F /* Images.xcassets */,
 				7F98C641192504D3009C124F /* Supporting Files */,
 			);
 			path = ColorCube;
@@ -149,6 +184,7 @@
 		7F98C641192504D3009C124F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				7F98C652192504D3009C124F /* Images.xcassets */,
 				7F186AA51925134100E4F320 /* Images */,
 				7F98C642192504D3009C124F /* ColorCube-Info.plist */,
 				7F98C643192504D3009C124F /* InfoPlist.strings */,
@@ -179,10 +215,10 @@
 		7F98C66F192504E6009C124F /* ColorCube */ = {
 			isa = PBXGroup;
 			children = (
-				7F98C67019250511009C124F /* CCColorCube.h */,
-				7F98C67119250511009C124F /* CCColorCube.mm */,
-				7F332284192563D500DB9917 /* CCLocalMaximum.h */,
-				7F332285192563D500DB9917 /* CCLocalMaximum.m */,
+				7F1057441925EA59005A98D4 /* CCColorCube.h */,
+				7F1057431925EA59005A98D4 /* CCColorCube.mm */,
+				7F1057421925EA59005A98D4 /* CCLocalMaximum.h */,
+				7F1057411925EA59005A98D4 /* CCLocalMaximum.m */,
 			);
 			name = ColorCube;
 			sourceTree = "<group>";
@@ -264,12 +300,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7F33228A1925677700DB9917 /* test4.jpg in Resources */,
+				7F46E8EA1925F21C003C595F /* markt.jpg in Resources */,
+				7F46E8ED1925F21C003C595F /* berlin.jpg in Resources */,
+				7F46E8E51925F21C003C595F /* xberg.jpg in Resources */,
+				7F46E8EB1925F21C003C595F /* glotze.jpg in Resources */,
+				7F46E8E91925F21C003C595F /* melone.jpg in Resources */,
+				7F46E8E71925F21C003C595F /* schnee.jpg in Resources */,
+				7F46E8EC1925F21C003C595F /* club.jpg in Resources */,
 				7F98C653192504D3009C124F /* Images.xcassets in Resources */,
-				7F33228C1925677700DB9917 /* test2.jpg in Resources */,
-				7F186AA71925134C00E4F320 /* test1.jpg in Resources */,
+				7F46E8E41925F21C003C595F /* streetart.jpg in Resources */,
+				7F46E8E81925F21C003C595F /* museum.jpg in Resources */,
+				7F46E8E61925F21C003C595F /* strand.jpg in Resources */,
 				7F98C645192504D3009C124F /* InfoPlist.strings in Resources */,
-				7F33228B1925677700DB9917 /* test3.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,11 +330,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7F332286192563D500DB9917 /* CCLocalMaximum.m in Sources */,
-				7F98C67219250511009C124F /* CCColorCube.mm in Sources */,
-				7F98C64B192504D3009C124F /* CCAppDelegate.m in Sources */,
+				7F1057451925EA59005A98D4 /* CCLocalMaximum.m in Sources */,
 				7F98C647192504D3009C124F /* main.m in Sources */,
-				7F98C651192504D3009C124F /* CCViewController.m in Sources */,
+				7F46E8D91925EA8D003C595F /* CCAppDelegate.m in Sources */,
+				7F46E8D71925EA8D003C595F /* CCTableViewCell.m in Sources */,
+				7F46E8D81925EA8D003C595F /* CCImageColors.m in Sources */,
+				7F46E8D61925EA8D003C595F /* CCViewController.m in Sources */,
+				7F1057461925EA59005A98D4 /* CCColorCube.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
