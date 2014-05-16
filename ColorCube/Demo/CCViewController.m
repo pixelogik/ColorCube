@@ -20,6 +20,7 @@
 @property (strong, nonatomic) NSArray *imageColors;
 
 @property (strong, nonatomic) UITableView *tableView;
+
 @property (strong, nonatomic) UISegmentedControl *segmented;
 
 - (void)segmentedChanged:(id)sender;
@@ -163,6 +164,7 @@
         dispatch_async(dispatch_get_main_queue(), ^{
             wself.imageColors = [NSArray arrayWithArray:newColorsArray];
             [wself.tableView reloadData];
+            wself.segmented.enabled = YES;
         });
     });
     
@@ -172,6 +174,7 @@
 
 - (void)segmentedChanged:(id)sender
 {
+    _segmented.enabled = NO;
     [self computeImageColorsWithMode:_segmented.selectedSegmentIndex];
 }
 
