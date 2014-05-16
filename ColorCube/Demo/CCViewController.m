@@ -124,23 +124,6 @@
     return 160;
 }
 
-/*
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    if (indexPath.row > 0) {
-        MZStoryItemEntity *item = [_stripLayout storyItemForIndex:indexPath.row-1]; // First row is cover, items start at 1
-        if (item) {
-            MZStoryStripItemWebViewController *itemVC = [[MZStoryStripItemWebViewController alloc] initWithItem:item];
-            [self.navigationController pushViewController:itemVC animated:YES];
-            // Show nav bar so that the user can go back
-            [self.navigationController setNavigationBarHidden:NO animated:YES];
-            // Mark this one
-            _isComingFromItemVC = YES;
-        }
-    }
-}
-*/
-
 #pragma mark - Color extraction 
 
 - (void)computeImageColorsWithMode:(NSUInteger)mode
