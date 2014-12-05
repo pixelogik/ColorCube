@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7F1057451925EA59005A98D4 /* CCLocalMaximum.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F1057411925EA59005A98D4 /* CCLocalMaximum.m */; };
-		7F1057461925EA59005A98D4 /* CCColorCube.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7F1057431925EA59005A98D4 /* CCColorCube.mm */; };
+		7F1057461925EA59005A98D4 /* CCColorCube.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F1057431925EA59005A98D4 /* CCColorCube.m */; };
 		7F46E8D61925EA8D003C595F /* CCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F46E8CE1925EA8D003C595F /* CCViewController.m */; };
 		7F46E8D71925EA8D003C595F /* CCTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F46E8D01925EA8D003C595F /* CCTableViewCell.m */; };
 		7F46E8D81925EA8D003C595F /* CCImageColors.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F46E8D21925EA8D003C595F /* CCImageColors.m */; };
@@ -49,7 +49,7 @@
 /* Begin PBXFileReference section */
 		7F1057411925EA59005A98D4 /* CCLocalMaximum.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CCLocalMaximum.m; path = ColorCube/CCLocalMaximum.m; sourceTree = "<group>"; };
 		7F1057421925EA59005A98D4 /* CCLocalMaximum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CCLocalMaximum.h; path = ColorCube/CCLocalMaximum.h; sourceTree = "<group>"; };
-		7F1057431925EA59005A98D4 /* CCColorCube.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = CCColorCube.mm; path = ColorCube/CCColorCube.mm; sourceTree = "<group>"; };
+		7F1057431925EA59005A98D4 /* CCColorCube.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CCColorCube.m; path = ColorCube/CCColorCube.m; sourceTree = "<group>"; };
 		7F1057441925EA59005A98D4 /* CCColorCube.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CCColorCube.h; path = ColorCube/CCColorCube.h; sourceTree = "<group>"; };
 		7F46E8CE1925EA8D003C595F /* CCViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CCViewController.m; path = Demo/CCViewController.m; sourceTree = "<group>"; };
 		7F46E8CF1925EA8D003C595F /* CCViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CCViewController.h; path = Demo/CCViewController.h; sourceTree = "<group>"; };
@@ -216,7 +216,7 @@
 			isa = PBXGroup;
 			children = (
 				7F1057441925EA59005A98D4 /* CCColorCube.h */,
-				7F1057431925EA59005A98D4 /* CCColorCube.mm */,
+				7F1057431925EA59005A98D4 /* CCColorCube.m */,
 				7F1057421925EA59005A98D4 /* CCLocalMaximum.h */,
 				7F1057411925EA59005A98D4 /* CCLocalMaximum.m */,
 			);
@@ -336,7 +336,7 @@
 				7F46E8D71925EA8D003C595F /* CCTableViewCell.m in Sources */,
 				7F46E8D81925EA8D003C595F /* CCImageColors.m in Sources */,
 				7F46E8D61925EA8D003C595F /* CCViewController.m in Sources */,
-				7F1057461925EA59005A98D4 /* CCColorCube.mm in Sources */,
+				7F1057461925EA59005A98D4 /* CCColorCube.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
