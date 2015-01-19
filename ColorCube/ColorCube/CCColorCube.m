@@ -81,7 +81,7 @@ int neighbourIndices[27][3] = {
 };
 
 @interface CCColorCube () {
-    CCCubeCell *cells;
+    CCCubeCell cells[COLOR_CUBE_RESOLUTION*COLOR_CUBE_RESOLUTION*COLOR_CUBE_RESOLUTION];
 }
 
 // Returns array of raw pixel data (needs to be freed)
@@ -127,8 +127,7 @@ int neighbourIndices[27][3] = {
 {
     self = [super init];
     if (self) {
-        // Allocate memory for grid cells
-        cells = new CCCubeCell[COLOR_CUBE_RESOLUTION*COLOR_CUBE_RESOLUTION*COLOR_CUBE_RESOLUTION];
+        
     }
     
     return self;
@@ -137,7 +136,7 @@ int neighbourIndices[27][3] = {
 - (void)dealloc
 {
     // Deallocate memory for grid cells
-    delete cells;
+    free(cells);
 }
 
 #pragma mark - Local maxima search
@@ -543,7 +542,7 @@ int neighbourIndices[27][3] = {
     CGContextRelease(context);
     
     // Write pixel count to passed pointer
-    *pixelCount = width * height;
+    *pixelCount = (int)width * (int)height;
     
     // Return pixel data (needs to be freed)
     return rawData;
