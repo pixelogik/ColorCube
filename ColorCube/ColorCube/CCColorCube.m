@@ -437,7 +437,7 @@ int neighbourIndices[27][3] = {
 - (NSArray *)extractColorsFromImage:(UIImage *)image flags:(NSUInteger)flags avoidColor:(UIColor*)avoidColor
 {
     // Get maxima
-    NSArray *sortedMaxima = [self extractColorsFromImage:image flags:flags];
+    NSArray *sortedMaxima = [self extractAndFilterMaximaFromImage:image flags:flags];
 
     // Filter out colors that are too close to the specified color
     sortedMaxima = [self filterMaxima:sortedMaxima tooCloseToColor:avoidColor];
