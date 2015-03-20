@@ -6,4 +6,4 @@
 #
 # Pods/
 
-xcuserdata
+*xcuserdata*
