@@ -513,14 +513,14 @@ int neighbourIndices[27][3] = {
     NSUInteger width = CGImageGetWidth(cgImage);
     NSUInteger height = CGImageGetHeight(cgImage);
 
-    // Create the color space
-    CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceRGB();
-
     // Allocate storage for the pixel data
     unsigned char *rawData = (unsigned char *)malloc(height * width * 4);
 
     // If allocation failed, return NULL
     if (!rawData) return NULL;
+
+    // Create the color space
+    CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceRGB();
 
     // Set some metrics
     NSUInteger bytesPerPixel = 4;
