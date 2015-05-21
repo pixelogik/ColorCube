@@ -5,6 +5,8 @@ ColorCube
 
 In a current iOS project I needed to get dominant colors from images. Some hints were going into some code that tried to mimic iTunes way of doing it, but they did not work for me. So I did this thing, called ColorCube.
 
+We use this at [you & the gang](http://youandthegang.com/) for in-house projects.
+
 It performs fast and easy color extraction from RGB images on iOS using a 3d histogram ("color cube"). It is fast because in order to extract colors you can downscale your image if it is too large and still get nice colors.
 
 ###  The algorithm goes like this:
