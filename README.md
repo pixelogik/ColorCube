@@ -9,8 +9,6 @@ It performs fast and easy color extraction from RGB images on iOS using a 3d his
 
 We use this at [you & the gang](http://youandthegang.com/) for in-house projects.
 
-###  New: Python version
-
 I just added a Python version of the algorithm, used by [marvel](https://marvelapp.com/). Marvel builds great mobile & web prototyping tools, check it out! 
 
 ###  The algorithm goes like this:
