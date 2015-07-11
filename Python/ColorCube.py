@@ -284,7 +284,7 @@ class ColorCube:
         	
 		return result
 
-##############################################################################################################################
+################################################################################
 # Command line example
 if __name__ == "__main__":
 	import argparse
@@ -305,13 +305,3 @@ if __name__ == "__main__":
 	# Print first four colors (there might be much more)
 	for c in colors[:10]:
 		print(c)
-
-
-
-
-
-
-
-
-
-
