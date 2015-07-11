@@ -288,8 +288,8 @@ class ColorCube:
 # Command line example
 if __name__ == "__main__":
 	import argparse
-	parser = argparse.ArgumentParser(description='Get dominant color of an image.')
-	parser.add_argument('image', help='Image to process')
+	parser = argparse.ArgumentParser(description='Get dominant colors of an image.')
+	parser.add_argument('image', help='Image file to process.')
 	args = parser.parse_args()
 
 	# Create color cube, avoiding resulting colors that are too close to white.
