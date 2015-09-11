@@ -1,1 +1,5 @@
-Just go 'python ColorCube.py' to see the example results.
+For example run:
+
+```
+$ python ColorCube.py berlin.jpg
+```

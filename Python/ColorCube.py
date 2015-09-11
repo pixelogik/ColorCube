@@ -50,19 +50,19 @@ class CubeCell:
 class ColorCube:
 	# Uses a 3d RGB histogram to find local maximas in the density distribution
 	# in order to retrieve dominant colors of pixel images
-	def __init__(self, resolution=30, avoid_color=None):
+	def __init__(self, resolution=30, avoid_color=None, distinct_threshold=0.2, bright_threshold=0.6):
 		
 		# Keep resolution
 		self.resolution = resolution
 
 		# Threshold for distinct local maxima
-		self.distinct_threshold = 0.2
+		self.distinct_threshold = distinct_threshold
 
 		# Color to avoid
 		self.avoid_color = avoid_color
 
 		# Colors that are darker than this go away		
-		self.bright_threshold = 0.6
+		self.bright_threshold = bright_threshold
 
 		# Helper variable to have cell count handy
 		self.cell_count = resolution * resolution * resolution
@@ -284,28 +284,24 @@ class ColorCube:
         	
 		return result
 
-##############################################################################################################################
+################################################################################
+# Command line example
+if __name__ == "__main__":
+	import argparse
+	parser = argparse.ArgumentParser(description='Get dominant colors of an image.')
+	parser.add_argument('image', help='Image file to process.')
+	args = parser.parse_args()
 
-# Create color cube, avoiding resulting colors that are too close to white.
-cc = ColorCube(avoid_color=[255, 255, 255])
+	# Create color cube, avoiding resulting colors that are too close to white.
+	cc = ColorCube(avoid_color=[255, 255, 255])
 
-# Load image and scale down to make the algorithm faster.
-# Scaling down also gives colors that are more dominant in perception.
-image = Image.open('berlin.jpg').resize((50, 50))
+	# Load image and scale down to make the algorithm faster.
+	# Scaling down also gives colors that are more dominant in perception.
+	image = Image.open(args.image).resize((50, 50))
 
-# Get colors for that image
-colors = cc.get_colors(image)
-
-# Print first four colors (there might be much more)
-for c in colors[:10]:
-	print(c)
-
-
-
-
-
-
-
-
-
-
+	# Get colors for that image
+	colors = cc.get_colors(image)
+	
+	# Print first four colors (there might be much more)
+	for c in colors[:10]:
+		print(c)
