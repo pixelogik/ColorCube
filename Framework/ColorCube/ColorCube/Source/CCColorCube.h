@@ -89,7 +89,7 @@ typedef struct CCCubeCell {
 // Tries to get count bright colors from the image, avoiding the specified one (only if avoidColor is non-nil).
 // IMPORTANT: The avoidColor (if set) must be in RGB, so create it with colorWithRed method of UIColor!
 // Might return less than count colors! 
-- (NSArray <UIColor *> * _Nullable )extractBrightColorsFromImage:(UIImage * _Nonnull)image CCFlags:(UIColor * _Nonnull)avoidColor count:(NSUInteger)count;
+- (NSArray <UIColor *> * _Nullable )extractBrightColorsFromImage:(UIImage * _Nonnull)image avoidColor:(UIColor * _Nonnull)avoidColor count:(NSUInteger)count;
 
 // Tries to get count dark colors from the image, avoiding the specified one (only if avoidColor is non-nil).
 // IMPORTANT: The avoidColor (if set) must be in RGB, so create it with colorWithRed method of UIColor!
