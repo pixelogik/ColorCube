@@ -512,7 +512,7 @@ int neighbourIndices[27][3] = {
     CGImageRef cgImage;
     
     #if TARGET_OS_OSX
-        CGImageSourceRef source = CGImageSourceCreateWithData((CFDataRef)[image TIFFRepresentation], NULL);
+        CGImageSourceRef source = CGImageSourceCreateWithData((__bridge CFDataRef)[image TIFFRepresentation], NULL);
         cgImage = CGImageSourceCreateImageAtIndex(source, 0, NULL);
     #else
         cgImage = [image CGImage];
@@ -546,6 +546,14 @@ int neighbourIndices[27][3] = {
 
     // We are done with the context
     CGContextRelease(context);
+    
+    #if TARGET_OS_OSX
+        // We are done with the image
+        CGImageRelease(cgImage);
+    
+        // We are done with the source
+        CFRelease(source);
+    #endif
 
     // Write pixel count to passed pointer
     *pixelCount = (int)width * (int)height;
