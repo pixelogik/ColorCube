@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "DD7A7C4E1E19A04A00579A8E"
-               BuildableName = "ColorCube-macOS.framework"
+               BuildableName = "ColorCube.framework"
                BlueprintName = "ColorCube-macOS"
                ReferencedContainer = "container:ColorCube.xcodeproj">
             </BuildableReference>
@@ -46,7 +46,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "DD7A7C4E1E19A04A00579A8E"
-            BuildableName = "ColorCube-macOS.framework"
+            BuildableName = "ColorCube.framework"
             BlueprintName = "ColorCube-macOS"
             ReferencedContainer = "container:ColorCube.xcodeproj">
          </BuildableReference>
@@ -64,7 +64,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "DD7A7C4E1E19A04A00579A8E"
-            BuildableName = "ColorCube-macOS.framework"
+            BuildableName = "ColorCube.framework"
             BlueprintName = "ColorCube-macOS"
             ReferencedContainer = "container:ColorCube.xcodeproj">
          </BuildableReference>

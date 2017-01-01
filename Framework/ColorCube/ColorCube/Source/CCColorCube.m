@@ -425,7 +425,7 @@ int neighbourIndices[27][3] = {
 }
 #pragma mark - Public methods
 
-- (NSArray *)extractColorsFromImage:(UIImage *)image flags:(NSUInteger)flags
+- (NSArray <UIColor *> *)extractColorsFromImage:(UIImage *)image flags:(CCFlags)flags
 {
     // Get maxima
     NSArray *sortedMaxima = [self extractAndFilterMaximaFromImage:image flags:flags];
@@ -434,7 +434,7 @@ int neighbourIndices[27][3] = {
     return [self colorsFromMaxima:sortedMaxima];
 }
 
-- (NSArray *)extractColorsFromImage:(UIImage *)image flags:(NSUInteger)flags avoidColor:(UIColor*)avoidColor
+- (NSArray <UIColor *> *)extractColorsFromImage:(UIImage *)image flags:(CCFlags)flags avoidColor:(UIColor*)avoidColor
 {
     // Get maxima
     NSArray *sortedMaxima = [self extractAndFilterMaximaFromImage:image flags:flags];
@@ -446,7 +446,7 @@ int neighbourIndices[27][3] = {
     return [self colorsFromMaxima:sortedMaxima];
 }
 
-- (NSArray *)extractBrightColorsFromImage:(UIImage *)image avoidColor:(UIColor*)avoidColor count:(NSUInteger)count
+- (NSArray <UIColor *> *)extractBrightColorsFromImage:(UIImage *)image CCFlags:(UIColor *)avoidColor count:(NSUInteger)count
 {
     // Get maxima (bright only)
     NSArray *sortedMaxima = [self findAndSortMaximaInImage:image flags:CCOnlyBrightColors];
@@ -480,7 +480,7 @@ int neighbourIndices[27][3] = {
     return [self colorsFromMaxima:sortedMaxima];
 }
 
-- (NSArray *)extractColorsFromImage:(UIImage *)image flags:(NSUInteger)flags count:(NSUInteger)count
+- (NSArray <UIColor *> *)extractColorsFromImage:(UIImage *)image flags:(CCFlags)flags count:(NSUInteger)count
 {
     // Get maxima
     NSArray *sortedMaxima = [self extractAndFilterMaximaFromImage:image flags:flags];

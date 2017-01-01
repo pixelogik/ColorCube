@@ -6,7 +6,7 @@
 //  Copyright © 2017 Guilherme Rambo. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 
 //! Project version number for ColorCube.
 FOUNDATION_EXPORT double ColorCubeVersionNumber;
