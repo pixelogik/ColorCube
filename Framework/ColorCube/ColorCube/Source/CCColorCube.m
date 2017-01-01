@@ -509,7 +509,15 @@ int neighbourIndices[27][3] = {
 - (unsigned char *)rawPixelDataFromImage:(UIImage *)image pixelCount:(unsigned int*)pixelCount
 {
     // Get cg image and its size
-    CGImageRef cgImage = [image CGImage];
+    CGImageRef cgImage;
+    
+    #if TARGET_OS_OSX
+        CGImageSourceRef source = CGImageSourceCreateWithData((CFDataRef)[image TIFFRepresentation], NULL);
+        cgImage = CGImageSourceCreateImageAtIndex(source, 0, NULL);
+    #else
+        cgImage = [image CGImage];
+    #endif
+    
     NSUInteger width = CGImageGetWidth(cgImage);
     NSUInteger height = CGImageGetHeight(cgImage);
 

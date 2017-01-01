@@ -19,7 +19,16 @@
 //  SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 //
 
-#import <UIKit/UIKit.h>
+#import <TargetConditionals.h>
+
+#if TARGET_OS_OSX
+    #import <Cocoa/Cocoa.h>
+
+    #define UIImage NSImage
+    #define UIColor NSColor
+#else
+    #import <UIKit/UIKit.h>
+#endif
 
 // Flags that determine how the colors are extract
 typedef enum CCFlags: NSUInteger
