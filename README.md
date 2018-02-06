@@ -7,9 +7,9 @@ In a current iOS project I needed to get dominant colors from images. Some hints
 
 It performs fast and easy color extraction from RGB images on iOS using a 3d histogram ("color cube"). It is fast because in order to extract colors you can downscale your image if it is too large and still get nice colors.
 
-We use this at [you & the gang](http://youandthegang.com/) for in-house projects.
+We use this at [New Forest](http://www.newforest.berlin/en.html) for in-house projects.
 
-I just added a Python version of the algorithm, used by [marvel](https://marvelapp.com/). Marvel builds great mobile & web prototyping tools, check it out! 
+I just added a Python version of the algorithm, used by [marvel](https://marvelapp.com/). Marvel builds great mobile & web prototyping tools, check it out!
 
 ###  The algorithm goes like this:
 
