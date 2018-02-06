@@ -19,7 +19,7 @@
 
 #import "CCViewController.h"
 
-#import "CCColorCube.h"
+#import <ColorCube/ColorCube.h>
 #import "CCTableViewCell.h"
 #import "CCImageColors.h"
 

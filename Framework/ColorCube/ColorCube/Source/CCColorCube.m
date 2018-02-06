@@ -425,7 +425,7 @@ int neighbourIndices[27][3] = {
 }
 #pragma mark - Public methods
 
-- (NSArray *)extractColorsFromImage:(UIImage *)image flags:(NSUInteger)flags
+- (NSArray <UIColor *> *)extractColorsFromImage:(UIImage *)image flags:(CCFlags)flags
 {
     // Get maxima
     NSArray *sortedMaxima = [self extractAndFilterMaximaFromImage:image flags:flags];
@@ -434,7 +434,7 @@ int neighbourIndices[27][3] = {
     return [self colorsFromMaxima:sortedMaxima];
 }
 
-- (NSArray *)extractColorsFromImage:(UIImage *)image flags:(NSUInteger)flags avoidColor:(UIColor*)avoidColor
+- (NSArray <UIColor *> *)extractColorsFromImage:(UIImage *)image flags:(CCFlags)flags avoidColor:(UIColor*)avoidColor
 {
     // Get maxima
     NSArray *sortedMaxima = [self extractAndFilterMaximaFromImage:image flags:flags];
@@ -446,7 +446,7 @@ int neighbourIndices[27][3] = {
     return [self colorsFromMaxima:sortedMaxima];
 }
 
-- (NSArray *)extractBrightColorsFromImage:(UIImage *)image avoidColor:(UIColor*)avoidColor count:(NSUInteger)count
+- (NSArray <UIColor *> *)extractBrightColorsFromImage:(UIImage *)image avoidColor:(UIColor *)avoidColor count:(NSUInteger)count
 {
     // Get maxima (bright only)
     NSArray *sortedMaxima = [self findAndSortMaximaInImage:image flags:CCOnlyBrightColors];
@@ -480,7 +480,7 @@ int neighbourIndices[27][3] = {
     return [self colorsFromMaxima:sortedMaxima];
 }
 
-- (NSArray *)extractColorsFromImage:(UIImage *)image flags:(NSUInteger)flags count:(NSUInteger)count
+- (NSArray <UIColor *> *)extractColorsFromImage:(UIImage *)image flags:(CCFlags)flags count:(NSUInteger)count
 {
     // Get maxima
     NSArray *sortedMaxima = [self extractAndFilterMaximaFromImage:image flags:flags];
@@ -509,7 +509,15 @@ int neighbourIndices[27][3] = {
 - (unsigned char *)rawPixelDataFromImage:(UIImage *)image pixelCount:(unsigned int*)pixelCount
 {
     // Get cg image and its size
-    CGImageRef cgImage = [image CGImage];
+    CGImageRef cgImage;
+    
+    #if TARGET_OS_OSX
+        CGImageSourceRef source = CGImageSourceCreateWithData((__bridge CFDataRef)[image TIFFRepresentation], NULL);
+        cgImage = CGImageSourceCreateImageAtIndex(source, 0, NULL);
+    #else
+        cgImage = [image CGImage];
+    #endif
+    
     NSUInteger width = CGImageGetWidth(cgImage);
     NSUInteger height = CGImageGetHeight(cgImage);
 
@@ -538,6 +546,14 @@ int neighbourIndices[27][3] = {
 
     // We are done with the context
     CGContextRelease(context);
+    
+    #if TARGET_OS_OSX
+        // We are done with the image
+        CGImageRelease(cgImage);
+    
+        // We are done with the source
+        CFRelease(source);
+    #endif
 
     // Write pixel count to passed pointer
     *pixelCount = (int)width * (int)height;

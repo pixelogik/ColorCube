@@ -19,7 +19,16 @@
 //  SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 //
 
-#import <UIKit/UIKit.h>
+#import <TargetConditionals.h>
+
+#if TARGET_OS_OSX
+    #import <Cocoa/Cocoa.h>
+
+    #define UIImage NSImage
+    #define UIColor NSColor
+#else
+    #import <UIKit/UIKit.h>
+#endif
 
 // Flags that determine how the colors are extract
 typedef enum CCFlags: NSUInteger
@@ -71,24 +80,24 @@ typedef struct CCCubeCell {
 @interface CCColorCube : NSObject
 
 // Extracts and returns dominant colors of the image (the array contains UIColor objects). Result might be empty.
-- (NSArray *)extractColorsFromImage:(UIImage *)image flags:(NSUInteger)flags;
+- (NSArray <UIColor *> * _Nullable )extractColorsFromImage:(UIImage * _Nonnull)image flags:(CCFlags)flags;
 
 // Same as above but avoids colors too close to the specified one.
 // IMPORTANT: The avoidColor must be in RGB, so create it with colorWithRed method of UIColor!
-- (NSArray *)extractColorsFromImage:(UIImage *)image flags:(NSUInteger)flags avoidColor:(UIColor*)avoidColor;
+- (NSArray <UIColor *> * _Nullable )extractColorsFromImage:(UIImage * _Nonnull)image flags:(CCFlags)flags avoidColor:(UIColor * _Nonnull)avoidColor;
 
 // Tries to get count bright colors from the image, avoiding the specified one (only if avoidColor is non-nil).
 // IMPORTANT: The avoidColor (if set) must be in RGB, so create it with colorWithRed method of UIColor!
 // Might return less than count colors! 
-- (NSArray *)extractBrightColorsFromImage:(UIImage *)image avoidColor:(UIColor*)avoidColor count:(NSUInteger)count;
+- (NSArray <UIColor *> * _Nullable )extractBrightColorsFromImage:(UIImage * _Nonnull)image avoidColor:(UIColor * _Nonnull)avoidColor count:(NSUInteger)count;
 
 // Tries to get count dark colors from the image, avoiding the specified one (only if avoidColor is non-nil).
 // IMPORTANT: The avoidColor (if set) must be in RGB, so create it with colorWithRed method of UIColor!
 // Might return less than count colors!
-- (NSArray *)extractDarkColorsFromImage:(UIImage *)image avoidColor:(UIColor*)avoidColor count:(NSUInteger)count;
+- (NSArray <UIColor *> * _Nullable )extractDarkColorsFromImage:(UIImage * _Nonnull)image avoidColor:(UIColor * _Nonnull)avoidColor count:(NSUInteger)count;
 
 // Tries to get count colors from the image
 // Might return less than count colors!
-- (NSArray *)extractColorsFromImage:(UIImage *)image flags:(NSUInteger)flags count:(NSUInteger)count;
+- (NSArray <UIColor *> * _Nullable )extractColorsFromImage:(UIImage * _Nonnull)image flags:(CCFlags)flags count:(NSUInteger)count;
 
 @end
