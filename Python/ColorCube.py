@@ -145,7 +145,8 @@ class ColorCube:
 
 		# Iterate over all pixels of the image
 		for p in image.getdata(): 
-
+			if p == 0:
+				break
 			# Get color components
 			r = float(p[0])/255.0
 			g = float(p[1])/255.0
